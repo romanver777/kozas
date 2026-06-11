@@ -1,0 +1,29 @@
+.badge {
+  width: fit-content;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $color-bg;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.badge--marketing {
+  background-color: $color-category-marketing;
+}
+.badge--management {
+  background-color: $color-category-management;
+}
+.badge--hr {
+  background-color: $color-category-hr;
+}
+.badge--design {
+  background-color: $color-category-design;
+}
+.badge--development {
+  background-color: $color-category-development;
+}
+.badge--default {
+  background-color: #828282;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Online Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/main.scss" />
+  </head>
+  <body class="body">
+    <main class="catalog" id="catalog">
+      <header class="catalog__header">
+        <p class="catalog__enjoy">Enjoy your studying!</p>
+        <h1 class="catalog__title">Our online courses</h1>
+      </header>
+
+      <div class="catalog__controls">
+        <div class="catalog__tabs-wrapper">
+          <nav
+            class="catalog__tabs"
+            id="tabs"
+            aria-label="Course categories"
+          ></nav>
+        </div>
+        <div class="catalog__search">
+          <input
+            class="catalog__search-input"
+            id="search-input"
+            type="search"
+            placeholder="Search course…"
+            aria-label="Search courses"
+            autocomplete="off"
+          />
+          <svg
+            class="catalog__search-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <circle
+              cx="6.5"
+              cy="6.5"
+              r="5"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M10.5 10.5L14 14"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        class="catalog__grid"
+        id="grid"
+        role="list"
+        aria-live="polite"
+        aria-label="Courses"
+      ></div>
+
+      <button
+        class="catalog__load-more catalog__load-more_hidden"
+        id="load-more"
+        type="button"
+      >
+        <span class="catalog__load-more-icon" aria-hidden="true">
+          <img src="icon/spinner.svg" width="21" height="20"
+        /></span>
+        <span>Load more</span>
+      </button>
+
+      <img
+        src="src/assets/shapes1.svg"
+        class="catalog__shape catalog__shape1-img"
+        alt="shape1"
+      />
+      <img
+        src="src/assets/shapes2.svg"
+        class="catalog__shape catalog__shape2-img"
+        alt="shape2"
+      />
+      <img
+        src="src/assets/dots.svg"
+        class="catalog__shape catalog__dots-img"
+        alt="dots"
+      />
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
