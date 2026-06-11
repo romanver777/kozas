@@ -54,6 +54,8 @@ const init = async () => {
   searchEl.value = initSearch;
 
   const loadCourses = async ({ category, search, page, append = false }) => {
+    setUrlState({ category, search });
+
     try {
       if (!append) {
         renderLoader(grid);
@@ -87,8 +89,6 @@ const init = async () => {
       } else {
         loadMoreEl.classList.add("catalog__load-more_hidden");
       }
-
-      setUrlState({ category, search });
 
       return result;
     } catch (error) {
