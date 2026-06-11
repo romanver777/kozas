@@ -122,7 +122,11 @@ const init = async () => {
     const tab = e.target.closest("[data-category]");
     if (!tab) return;
 
+    const activeEl = document.getElementsByClassName("catalog__tab--active");
     const newCategory = tab.dataset.category;
+
+    if (activeEl[0].firstChild.nodeValue === newCategory) return;
+
     state.set({ category: newCategory, page: 1 });
     renderTabs(tabsEl, categories, newCategory);
 
